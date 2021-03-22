@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Duración vuelo: Crear un programa que pida al usuario ingresar, por separado, 3 destinos de las escalas de un vuelo, y la duración de cada uno de ellos. Al final debe mostrar un mensaje que liste todas las escalas con su duración y la duración total del vuelo.
+
+        const escala1 = prompt ("ingrese aqui el destino de la primer escala de su vuelo:");
+        const duracionPrimerEscala = prompt ("ingrese aqui el tiempo de viaje hasta su primer escala:");
+
+        const escala2 = prompt ("ingrese aqui el destino de la segunda escala de su vuelo:");
+        const duracionSegundaEscala = prompt ("ingrese aqui el tiempo de viaje desde su primer escala hasta la segunda:");
+
+        const escala3 = prompt ("ingrese aqui el destino de la tercer escala de su vuelo:");
+        const duracionTercerEscala = prompt ("ingrese aqui el tiempo de viaje desde su segunda escala hasta la tercera:");
+
+        const tiempoTotalDeViaje = Number(duracionPrimerEscala) + Number(duracionSegundaEscala) + Number(duracionTercerEscala);
+
+        alert(`el tiempo total de viaje será de ${tiempoTotalDeViaje} horas y realizara escalas en ${escala1}, ${escala2} y ${escala3}` );
+    </script>
+</body>
+</html>

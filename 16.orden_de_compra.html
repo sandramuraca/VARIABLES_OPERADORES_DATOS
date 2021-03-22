@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //orden de compras: Crear un programa que tome la orden de compra de un local. Pedir al usuario que ingrese la cantidad que desea comprar de tres productos distintos, uno por uno, mostrar el valor total de la compra y preguntar en cuántas cuotas desea realizar el pago. Mostrar un mensaje final con el detalle y el valor total la compra, cantidad de cuotas y valor de cada una de las cuotas. Los precios de los productos deben estar definidos de antemano en variables.
+
+        alert("Indique la cantidad de productos que va a compar.");
+
+        let zapatillas = 200;
+        let botas = 300;
+        let cartera = 450;
+
+        let cantZapatillas = prompt("Indique la cantidad de zapatillas que va a compar. Su valor unitario es de $200");
+
+        let cantBotas = prompt("Indique la cantidad de botas que va a compar. Su valor unitario es de $300");
+
+        let cantCartera = prompt("Indique la cantidad de carteras que va a compar. Su valor unitario es de $450");
+
+        let totalCompraZapatillas = zapatillas * cantZapatillas;
+        let totalCompraBotas = botas * cantBotas;
+        let totalCompraCartera = cartera * cantCartera;
+
+        let totalCompra = totalCompraZapatillas + totalCompraBotas + totalCompraCartera;
+
+        alert(`El costo total de su compra es de $ ${totalCompra}`);
+
+        let cantCuotas = prompt("ingrese la cantidad de cuotas en la que quiere abonar su compra");
+
+        let valorCuota = totalCompra / cantCuotas;
+
+        alert(`Usted ha comprado:
+        ${cantZapatillas} par zapatillas, por un total de $ ${totalCompraZapatillas},
+        ${cantBotas} par de botas, por un total de $ ${totalCompraBotas},
+        ${cantCartera} cartera, por un total de $ ${totalCompraCartera},
+        el total de su compra es de $ ${totalCompra},
+        Usted va a pagarlo en ${cantCuotas} cuotas de $ ${valorCuota} c/u.
+        Muchas gracias por su compra!`)
+
+    </script>
+</body>
+</html>

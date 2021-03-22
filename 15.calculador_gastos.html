@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*Crear un programa que pida al usuario cuanto dinero disponible tiene, y vaya preguntando cuánto tiene que pagar por cada servicio, pidiendo el nombre del servicio y el monto a pagar, uno a la vez. Cada vez que pide ingresar un nuevo servicio, el mensaje debe mostrar cuántos servicios quedan por ingresar, utilizando una variable, y mostrar cuánto dinero disponible queda. Al final debe mostrar una lista con todos los servicios a pagar y el monto de cada uno, además del dinero disponible que le queda. Hacerlo con 3 servicios.*/
+
+        let dineroDisponible = Number(prompt("Cuando dinero disponible tiene?"));
+
+        let cantidadServiciosAPagarInicial = 3;
+
+        let servicio1 = prompt("ingrese el servicio a pagar:");
+        let montoServicio1 = Number(prompt("ingrese el monto del servicio a pagar:"));
+        let nuevaCantDeServiciosAPagar = cantidadServiciosAPagarInicial - Number(1);
+        let saldoActual = Number(dineroDisponible) - Number(montoServicio1);
+        alert(`A usted le quedan ${nuevaCantDeServiciosAPagar} servicios por pagar y su saldo disponible es de: ${saldoActual}`);
+
+        let servicio2 = prompt("ingrese el segundo servicio a pagar:");
+        let montoServicio2 = Number(prompt("ingrese el monto del servicio a pagar:"));
+        /*let nuevaCantDeServiciosAPagar = Number(nuevaCantDeServiciosAPagar) - Number(1);
+        let saldoActual = Number(saldoActual) - Number(montoServicio2);
+        alert(`A usted le quedan ${nuevaCantDeServiciosAPagar} servicios por pagar y su saldo disponible es de: ${saldoActual}`);*/
+
+
+
+
+
+    </script>
+</body>
+</html>

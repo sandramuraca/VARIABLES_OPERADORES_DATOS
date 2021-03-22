@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Tiempo de viaje:Crear un programa que pida al usuario la distancia de su recorrido y mostrar en un mensaje cuánto tiempo tardaría en completar el recorrido en distintos medios de transporte, definiendo de antemano distintas velocidades para distintos medios de transporte (p. ej.: a pie: 5 km/hora, bici 10km/hora, etc.).
+
+        const distancia = prompt("ingrese la distancia de su trayecto en kilometros:");
+        const aPie = (Number(60) / Number(5))* distancia;
+        alert(`si usted realiza su recorrido a pie tardara ${aPie} minutos, ya que la velocidad calculada es de 5km por hora
+        `);
+
+        const bicicleta = (Number(60) / Number(10))* distancia;
+        alert(`si usted realiza su recorrido en bicilcleta tardara ${bicicleta} minutos, ya que la velocidad calculada es de 10km por hora
+        `);
+
+        const caballo = (Number(60) / Number(20))* distancia;
+        alert(`si usted realiza su recorrido a caballo tardara ${caballo} minutos, ya que la velocidad calculada es de 20km por hora
+        `);
+
+        /* ejemplo clase
+    // 5km 
+    // 1 
+    // 1/2  
+    // 0.08hora
+    // 
+    const distancia = Number(prompt("Ingrese los km que quiere recorrer"));
+    const pieResultado = distancia / 5;
+    const biciResultado = distancia / 10;
+    const autoResultado = distancia / 60;
+
+    alert(`el tiempo para terminar tu recorrido es: \n a pie: ${pieResultado} hs\n en bici: ${biciResultado} hs\n en auto: ${autoResultado} hs`);
+    alert(`el tiempo para terminar tu recorrido es: 
+     a pie: ${pieResultado} hs 
+     en bici: ${biciResultado} hs
+     en auto: ${autoResultado} hs`);*/
+
+
+
+    </script>
+</body>
+</html>

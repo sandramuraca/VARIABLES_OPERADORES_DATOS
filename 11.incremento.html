@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        //generalmente los datos ingresados por el usuario se guardan con const, por que no quiero que se modifiqien, este caso seria la excepcion
+
+
+        let numero = Number(prompt("ingrese un número"));
+        const incremento = Number(prompt("ingrese la cantidad que quiere incrementar"));
+
+        //reutilizo la variable, se llama "acumulador"
+
+        numero = numero + incremento;
+        alert(`el numero incrementado es igual a ${numero}`); //esto es igual a numero += incremento
+        numero = numero + incremento;
+        alert(`el numero incrementado es igual a ${numero}`);
+        numero = numero + incremento;
+        alert(`el numero incrementado es igual a ${numero}`);
+        numero = numero + incremento;
+        alert(`el numero incrementado es igual a ${numero}`);
+        numero = numero + incremento;
+        alert(`el numero incrementado es igual a ${numero}`);
+
+    </script>
+</body>
+</html>

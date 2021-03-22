@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Cantidad de huéspedes: Crear un programa que pida al usuario ingresar, de a uno por vez, cuántas habitaciones tiene un hotel para 2, 3 y 4 personas, y muestre el máximo de huéspedes que puede albergar.
+
+        let hab2Pers = prompt("ingrese la cantidad de habitaciones para 2 personas que tiene si alojamiento");
+
+        let hab3Pers = prompt("ingrese la cantidad de habitaciones para 3 personas que tiene si alojamiento");
+
+        let hab4Pers = prompt("ingrese la cantidad de habitaciones para 4 personas que tiene si alojamiento");
+
+        let cantPasajerosHab2 = Number(hab2Pers)*2;
+        let cantPasajerosHab3 = Number(hab3Pers)*3;
+        let cantPasajerosHab4 = Number(hab4Pers)*4;
+
+        const totalHuespedes = (cantPasajerosHab2 + cantPasajerosHab3 + cantPasajerosHab4);
+
+        alert (`su alojamiento cuenta con espacio para ${totalHuespedes} pasajeros`);
+
+
+    </script>
+</body>
+</html>

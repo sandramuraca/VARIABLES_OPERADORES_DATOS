@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Múltiplos: Crear un programa que pida al usuario un número, luego otro y mostrar en un mensaje si el primer valor es múltiplo del segundo. INVESTIGAR EL OPERADOR MÓDULO O DE RESTO % PARA HACERLO
+
+        alert("Le pediremos que ingrese 2 numeros, averiguaremos si el 1° es multiplo del 2°")
+        const num1 = prompt("ingrese aqui el 1° numero:");
+        const num2 = prompt("ingrese aqui el 2° numero: ");
+
+        const multiplo = Number(num1) % Number(num2);
+        console.log(multiplo);
+
+        if (multiplo == 0){
+            alert(`${num1} es multiplo de ${num2}`);
+        } else (multiplo!= 0);{
+            alert(`${num1} no es multiplo de ${num2}`)
+        }
+
+        
+    </script>
+</body>
+</html>
